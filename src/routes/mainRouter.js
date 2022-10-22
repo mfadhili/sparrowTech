@@ -25,7 +25,7 @@ router.post('/test', async function(req, res) {
 router.get('/login', async function(req, res){
     const client_id = '1186208745587558';
     const client_secret = 'CLIENT_SECRET';
-    const redirect_uri = 'http://44.201.166.62:3000';
+    const redirect_uri = 'http://44.201.166.62:3000/';
     const login_url =  'https://api.instagram.com/oauth/authorize/?client_id=' + client_id + '&redirect_uri=' + redirect_uri + '&response_type=code';
     res.redirect(login_url);
 
