@@ -29,6 +29,8 @@ router.get('/login', async function(req, res){
     const login_url =  'https://api.instagram.com/oauth/authorize/?client_id=' + client_id + '&redirect_uri=' + redirect_uri + '&response_type=code';
     res.redirect(login_url);
 
+    console.log( login_url);
+
 })
 
 /*Instagram Authentication and create */
