@@ -38,7 +38,7 @@ router.get('/auth', async function(req, res) {
     console.log("auth request")
     console.log(req)
     /*Setting up form data*/
-    const form = new FormData();
+    /*const form = new FormData();
     form.append('client_id', 'instagram client id');
     form.append('client_secret', 'instagram client secret');
     form.append('grant_type', 'authorization_code');
@@ -48,7 +48,7 @@ router.get('/auth', async function(req, res) {
 
     const response_data = await axios.post('https://api.instagram.com/oauth/access_token', form)
 
-    /*Get User data*/
+    /!*Get User data*!/
     const response_user = await axios.get(`https://graph.instagram.com/${response_data.user_id}?fields=id,username,&access_token=${response_data.access_token}`)
 
     const user_data = {
@@ -73,7 +73,7 @@ router.get('/auth', async function(req, res) {
     }).promise()
 
     //outpu
-
+*/
 });
 
 /* get url and run rekognitions*/
