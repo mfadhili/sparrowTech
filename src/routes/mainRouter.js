@@ -37,7 +37,7 @@ router.get('/login', async function(req, res){
 router.post('/auth', async function(req, res) {
     console.log("auth request");
     console.log(req);
-    res.send(req.code);
+    res.send(req.query.code);
     /*Setting up form data*/
 
     /*const form = new FormData();
