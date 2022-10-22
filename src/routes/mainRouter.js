@@ -34,7 +34,7 @@ router.get('/login', async function(req, res){
 })
 
 /*Instagram Authentication and create */
-router.get('/auth', async function(req, res) {
+router.post('/auth', async function(req, res) {
     console.log("auth request")
     console.log(req)
     /*Setting up form data*/
