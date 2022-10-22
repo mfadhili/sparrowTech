@@ -25,7 +25,7 @@ router.post('/test', async function(req, res) {
 router.get('/login', async function(req, res){
     const client_id = '1186208745587558';
     const client_secret = 'CLIENT_SECRET';
-    const redirect_uri = 'https://social-engineer.heroku.com/';
+    const redirect_uri = 'https://social-engineer.herokuapp.com/';
     const login_url =  'https://api.instagram.com/oauth/authorize/?client_id=' + client_id + '&redirect_uri=https://social-engineer.herokuapp.com/' + '&response_type=code';
     res.redirect(login_url);
 
